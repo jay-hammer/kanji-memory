@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanji Memory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">   
+    <!-- Startbildschirm -->
+    <div id="start-screen">
+      <h1>漢字メモリー</h1>
+      <img src="smallcat.png" alt="Japan" width="120" />
+      <button id="start-button">ゲームを始めよう</button>
+    </div>
+
+    <!-- Spielbildschirm -->
+    <div id="game-screen" class="hidden">
+      <div id="game-board"></div>
+      <div id="message" class="hidden">
+        よくやった！
+        <br />
+        <button id="back-button">タイトルへ戻る</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>  
+</body>
+</html>

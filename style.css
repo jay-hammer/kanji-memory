@@ -1,0 +1,117 @@
+body {
+  font-family: 'MS Gothic', sans-serif;
+  background-color: #e6f8b5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 640px;
+  height: 480px;
+  background-color: #d7f5b5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+#start-screen,
+#game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+}
+
+
+#start-screen {
+  text-align: center;
+}
+
+#start-screen h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+#start-button {
+  padding: 16px 32px;
+  font-size: 20px;
+  background-color: #fcd34d;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+#start-button:hover {
+  background-color: #fbbf24;
+  transform: scale(1.05);
+}
+
+#game-board {
+  display: none;
+  width: 640px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+#game-board button {
+  font-size: 38px;
+  background-color: blanchedalmond;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#game-board button:hover {
+  outline: none;
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 28px;
+  color: #2e7d32;
+  z-index: 10;
+}
+
+#back-button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #90cdf4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#back-button:hover {
+  background-color: #63b3ed;
+}
+
+.hidden {
+  display: none;
+}
